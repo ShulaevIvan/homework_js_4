@@ -23,7 +23,7 @@ function question(counter=0) {
     
     rl.question('Угадайте  число от 1 до 100: ', (cmd)=>{
 
-        if (cmd != 'quit' && isNaN(Number(cmd)) || cmd > 100 || cmd == '') {
+        if (cmd != 'quit' && isNaN(Number(cmd)) || cmd > 100 || cmd == '' || cmd == 0) {
             console.log('Ошибка  ввода')
             return question()
         };
