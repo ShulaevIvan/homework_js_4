@@ -28,7 +28,7 @@ function question(counter=0) {
             return question()
         };
 
-        let number = Math.floor(Math.random() * 100)
+        let number = Math.floor(Math.random(1) * 100)
 
         if (cmd == 'quit') {
             rl.close()
